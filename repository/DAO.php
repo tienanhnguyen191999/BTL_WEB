@@ -9,7 +9,7 @@ class DAO {
     // Only can call this function one times (When init Instance)
     private function __construct()
     {
-        $this->con = new \mysqli("127.0.0.1:3310", "root", "123456", "btl_web"); 
+        $this->con = new \mysqli("127.0.0.1:3306", "root", "", "btl_web"); 
         // Check connection
         if ($this->con->connect_error) {
             die("Connection failed: " . $this->con->connect_error);
